@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test de Comprensión Lectora</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 id="titleInit">Test Número 34</Nav></h2>
+        <p id="paragraphInit">
+            Este test busca medir tu velocidad y comprensión
+            lectora.<br>
+            Te recomendamos que lo hagas en un ambiente
+            calmado, sin distracciones y con buena iluminación.<br>
+            Esta lectura la debes hacer basado en las técnicas
+            que ya hayas empezado a usar. En las primeras
+            semanas, no debes preocuparte mucho por la
+            comprensión lectora, ya que ese es un proceso que se
+            va a ir dando paulatinamente.<br>
+            Cuando des clic en INICIAR se te presentará la lectura
+            y el sistema llevará un cronómetro que medirá tu
+            velocidad. Al finalzar de leer todo el texto debes dar
+            clic en el botón TERMINAR.<br>
+        </p>
+        <button id="startButton">Iniciar</button>
+        <div id="textContainer" class="hidden">
+            <p id="textToRead">
+                Nos vemos en Navidad
+                <br><br>
+                Laura y yo fuimos amigas durante mucho tiempo, tanto que casi no podría decir cuánto. Durante muchísimos años nos vimos muy seguido, todo lo que podíamos y podíamos mucho.
+                <br><br>
+                Con el tiempo y las ocupaciones de cada una, nuestros encuentros se fueron espaciando, sin que fuese menor el cariño que una sentía por la otra.
+                <br><br>
+                Hacía ya varios años que nos habíamos hecho una promesa, por complicadas que estuviésemos nos veríamos para Navidad. Y siempre lo habíamos cumplido. Hacíamos compras juntas, tomábamos cafés interminables y por sobre todas las cosas, Laura me contagiaba su mágico espíritu navideño. Mi amiga amaba la Navidad, hacía de ella un culto. Probaba recetas nuevas, cocinaba dulces y panes para regalar, envolvía cada cosa con muy buen gusto y un amor infinito. Decoraba su hogar, su mesa, su vida entera. El mayor tiempo lo pasábamos viendo vidrieras con decoraciones navideñas, Laura podía pasar horas mirando -como hipnotizada- árboles de Navidad, velas, santas, estrellas, renos y yo con ella. Era una época especial, sin dudas para todos, pero para nosotras más aún, porque nos veíamos mucho más que durante todo el año y era hermoso hacer preparativos juntas.
+                <br><br>
+                Un día de junio, Laura me cuenta que debe viajar por trabajo al exterior "¿Cuánto tiempo"? pregunté desconcertada, la idea no me gustaba demasiado. "No te preocupes", respondió "Nos veremos en Navidad" Sus palabras me tranquilizaron, si bien la extrañaría en cualquier mes del año, pensar en preparar una Navidad sin ella me resultaba casi imposible.
+                <br><br>
+                Un día de diciembre, muchos días antes de Navidad y un día que jamás olvidaré, supe que Laura había muerto en un accidente y que no volvería ni para Navidad, ni nunca. Me sentí desolada, infinitamente triste, desconcertada ¿cómo podía ser que Laura ya no estuviese? ¿Cómo era posible que ya no la viese más? ¿Cómo se puede morir un amigo? Preguntas tontas, inútiles de formularse, preguntas que jamás tendrían una respuesta.
+                <br><br>
+                Con el tiempo, la tristeza dio paso al enojo. Por tonto que pareciera, yo estaba enojada, muy enojada con mi amiga. No había cumplido su palabra, no volvería, no compartiríamos jamás otra Navidad y por ende la Navidad, nunca volvería a ser igual para mí. Las que siguieron, fueron navidades opacas, sin brillo, no sólo faltaba Laura, también faltaba su entusiasmo contagioso para vivir esa época del año.
+                <br><br>
+                Y un día de diciembre, otro un día que jamás olvidaré y casi sin darme cuenta, Laura volvió. Por primera vez luego de su muerte, me detuve a ver una vidriera de Navidad y de pronto, como un susurro dentro de mi corazón, volví a escuchar sus palabras "Nos veremos en Navidad". El reflejo de la vidriera me mostraba sonriente al ver –nuevamente y casi con los ojos de otros años- árboles, estrellas, Santas y moños.
+                <br><br>
+                Volví a sentir esa sensación hermosa que Laura transmitía con tanto entusiasmo, frente a esas mágicas vidrieras. Volví a escuchar su voz, a sentir su perfume y en cierto modo su compañía. Laura estaba ahí también, en cada cosa que había amado y que me había enseñado a amar a mí. Me di cuenta que si bien Laura había muerto, jamás se había ido, que no me había abandonado y que jamás lo haría. Que seguía siendo mi amiga y que si bien ya no la volvería a ver, eso no significaba que no la sintiese conmigo, porque cuando alguien que amamos de verdad parte, hay un hilo invisible que nos sigue conectando, hay una presencia que no se ve, pero que existe y que es real. Nadie nos deja, solo ocupa otro lugar y eso solo pude entenderlo con el tiempo porque para dejar partir a alguien, entre tantas otras cosas, se necesita tiempo.
+                <br><br>
+                Entré al negocio y compré algunos adornos para mi pobre árbol de Navidad que se estaría preguntando el porqué de mi abandono. Salí casi casi feliz del negocio, mi entusiasmo había vuelto, ése que mi amiga me había contagiado tantos años atrás, ése que habíamos compartido tantas veces.
+                <br><br>
+                Y luego de mucho tiempo, me alegré de que fuese Navidad porque en cada vidriera mi amiga me estaría esperando, en cada árbol decorado estaría sonriendo, en cada estrella estaría brillando. Era Navidad, y de algo volvía a estar segura, Laura y yo nos volveríamos a ver.
+            </p>
+               
+            <div id="timer">Tiempo transcurrido: <span id="timerValue">0</span> segundos</div>
+            <button id="finishButton">Terminar</button>
+        </div>
+        <div id="questionnaire" class="hidden">
+            <h2>Test de Comprensión Lectora</h2>
+            <form id="quizForm">
+                <ol id="questionList">
+                    <!-- Las preguntas se añadirán aquí dinámicamente con JavaScript -->
+                </ol>
+                <button type="submit">Terminar</button>
+            </form>
+        </div>
+        <div id="results" class="hidden">
+            <h2>Resultados</h2>
+            <div id="wordCount">Palabras leídas: <span id="wordCountValue"></span></div>
+            <div id="readingSpeed">Velocidad de lectura: <span id="readingSpeedValue"></span> palabras por minuto</div>
+            <div id="comprehension">Comprensión lectora: <span id="comprehensionValue"></span>%</div>
+            <div id="timeResult">Tiempo transcurrido: <span id="timeResultValue"></span> segundos</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
